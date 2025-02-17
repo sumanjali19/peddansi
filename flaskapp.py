@@ -66,7 +66,7 @@ def upload():
         if file.filename == '':
             return "No selected file", 400
             # Save the uploaded file to the new uploads directory
-        upload_directory = "/home/ubuntu/flaskapp/uploads"
+        upload_directory = "var/www/html/flaskapp"
         file_path = os.path.join(upload_directory, "uploaded_file.txt")
         file.save(file_path)
 
